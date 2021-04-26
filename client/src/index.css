@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 100px;
+  z-index: 100;
+  background: black;
+}
+.header .logo {
+  display: flex;
+  text-decoration: none;
+}
+.header .logo:hover {
+  cursor: pointer;
+}
+.header .logo h4 {
+  color: #de0611;
+  font-size: 20px;
+  margin: 30px -10px 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.header .logo img {
+  max-width: 70px;
+}
+.navigation {
+  display: flex;
+}
+.navigation li {
+  list-style: none;
+  margin: 15px 30px 0;
+}
+.navigation li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.navigation li:hover a {
+  color: #de0611;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./assets/images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.content h2 {
+  font-size: 3em;
+  color: #fff;
+  font-weight: 700;
+}
+.content span {
+  color: #de0611;
+}
+.content p {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 400;
+}
+.card {
+  transition: 0.1s;
+  -webkit-transition: all 0.5s;
+  color: #fff;
+  text-align: center;
+}
+.card-image {
+  transition: 0.35s;
+  height: 350px;
+  object-fit: contain;
+}
+.card-image:hover {
+  transition: 0.35s;
+  cursor: pointer;
+}
+.card:hover {
+  z-index: 1;
+  box-shadow: 0 12px 20px rgba(222, 6, 17, 0.5);
+  border: none;
+  background-color: transparent;
+  -webkit-transform: translate(0, -0.5em);
+}
+.movie-title {
+  font-weight: 500;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.movie-title:hover {
+  color: #de0611;
+  cursor: pointer;
+}
+.movie-title-detail {
+  font-weight: 700;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.movie-genre {
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #de0611;
+  border-radius: 50px;
+  padding: 2px 7px;
+}
+.movie-desc {
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+.movie-desc.detail {
+  word-wrap: break-word;
+  -webkit-line-clamp: 12;
+}
+.favorite-icon {
+  position: relative;
+  right: 0px;
+  top: 160px;
+  background-color: transparent;
+  font-size: 20px;
+  color: #de0611;
+}
+.favorite-icon:hover {
+  color: goldenrod;
+  cursor: pointer;
+}
+.delete-icon {
+  position: relative;
+  right: 0px;
+  top: 187px;
+  background-color: transparent;
+  font-size: 20px;
+  color: #fff;
+}
+.delete-icon:hover {
+  color: #de0611;
+  cursor: pointer;
+}
+.circle {
+  position: absolute;
+  right: 10px;
+  top: 200px;
+  border-radius: 50px;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+}
